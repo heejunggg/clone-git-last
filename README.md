@@ -1,3 +1,4 @@
-#
+# kococoa talk!
 
-html
+html & css & animation!
+It's fun!
