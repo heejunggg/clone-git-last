@@ -1,0 +1,62 @@
+.user_component,
+.user_component-column:first-child {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.user_component_avatar {
+    margin-right:10px;
+    border-radius:30px;
+    object-fit: cover;
+}
+.user-component_avatar--sm {
+    width:70px;
+    height:70px;
+}
+.user-component_avatar--xl {
+    width:80px;
+    height:80px;
+}
+.user_component_title {
+    font-size:22px;
+    font-weight:600;
+    margin-bottom:10px;
+}
+.user_component_title--not-bold {
+    font-weight:400;
+}
+.user_component_subtitle{
+    color:rgba(0,0,0,0.8);
+    font-size:17px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+.user_component-column:last-child {
+    color:rgba(0,0,0,0.5);
+}
+.user_component-column:last-child span {
+    margin-right:5px;
+}
+.user_component-number2 {
+    width:18px;
+    height:18px;
+    background-color:tomato;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.user_component-text .fa-exclamation {
+    display:block;
+    border:2px solid tomato;
+    width:15px;
+    height:15px;
+    border-radius:50%;
+    color:tomato;
+    font-size:15px;
+    text-align:center;
+    margin-left:5px;
+    
+}

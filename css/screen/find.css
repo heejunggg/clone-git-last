@@ -1,0 +1,107 @@
+.recommended-friends {
+    border-top:var(--main-border);
+    border-bottom:var(--main-border);
+    margin:25px 0;
+    padding:25px 0;
+    opacity: 0.4;
+    font-weight:600;
+}
+.recommended-friends_title {
+    font-size:14px;
+}
+.recommended-friends span {
+    display:block;
+    text-align: center;
+    padding:100px 0;
+    font-size:18px;
+}
+.open-chat_header {
+    display:flex;
+    justify-content: space-between;
+    opacity: 0.7;
+    margin-bottom:25px;
+}
+.open-post {
+    margin-top:20px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.open-post_title {
+    font-weight: 600;
+}
+.open-post_hashtag {
+    margin:7px 0;
+    opacity:0.6;
+    text-transform:uppercase;
+}
+.open-post_members {
+    display:flex;
+    align-items: center;
+    margin-top:7px;
+}
+/*.open-post_column:not(.open-post_title) {
+    opacity:0.5;
+}*/
+.open-post_members img {
+    width:30px;
+    height:30px;
+    object-fit: cover;
+    border-radius:20px;
+    margin-right:5px;
+}
+.open-post_members-counts {
+    opacity:0.5;
+    font-size:14px;
+}
+.open-post_members .divider {
+    width:2px;
+    height:15px;
+    margin:0 5px;
+    background-color:rgba(0,0,0,0.5);
+}
+.open-post_members-status {
+    color:#ff6cc6;
+}
+.open-post_photo {
+    position:relative;
+}
+.open-post_photo img {
+    width:120px;
+    height:120px;
+    object-fit: cover;
+    border-radius:20px;
+}
+.open-post_heart-count {
+    position:absolute;
+    bottom:5px;
+    right:5px;
+    background-color:rgba(6, 101, 72, 0.5);
+    padding:5px;
+    border-radius:20px;
+    font-size:12px;
+    color:white;
+}
+@keyframes heart {
+    0%{
+        transform:none;
+        color:white;
+    }
+    50% {
+        transform:scale(2);
+        color:#ff6cc6;
+    }
+    100% {
+        transform:none;
+        color:white;
+    }
+}
+.open-post_photo:hover i{
+    will-change:transform;
+    animation:heart 0.8s linear infinite;
+}
+.open-post:last-child{
+    margin:25px 0;
+    padding:25px 0;
+    border-top:var(--main-border);
+}/*first는 적용이 왜 안되는지..*/

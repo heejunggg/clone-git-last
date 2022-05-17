@@ -1,0 +1,72 @@
+.nav {
+    position:fixed;
+    bottom:0;
+    background-color:#f9f9fa;
+    width:100%;
+
+}
+.nav_list {
+    display:flex;
+    justify-content:space-around;
+    padding:24px 12px;
+    
+}
+.nav_link {
+    position:relative;
+}
+.nav_number {
+    background-color:tomato;
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+
+    position:absolute;
+    left:16px;
+    bottom:18px;
+    animation:nav_number_ani 2s ease-in-out infinite;
+}
+@keyframes nav_number_ani {
+    0%{
+        transform:none;
+    }
+    50%{
+        transform:translateY(-10px) rotateY(360deg);
+    }
+    100%{
+        transform:none;
+    }
+}
+/* 변화될 모양 */
+.nav_btn {
+    
+    transform:translateY(50px);
+    opacity: 0;
+    
+    animation: nav_btn-move 1s ease-in-out forwards;
+}
+@keyframes nav_btn-move {
+    form{
+        opacity: 0;
+    }
+    to{
+        transform:none;
+        opacity: 1;
+        
+    }
+}
+.nav_btn:first-child {
+    animation-delay:0.2s;
+}
+.nav_btn:nth-child(2) {
+    animation-delay:0.4s;
+}
+.nav_btn:nth-child(3) {
+    animation-delay:0.6s;
+}
+.nav_btn:last-child {
+    animation-delay:0.8s;
+}

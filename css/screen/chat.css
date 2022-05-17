@@ -1,0 +1,164 @@
+#chat-screen {
+    background-color:#abc1d1;
+}
+.chat_timestamp {
+    color:white;
+    background-color:#92a4b2;
+    padding:10px;
+    border-radius:25px;
+    text-align:center;
+}
+.main-chat {
+    margin-top:150px;
+    display:flex;
+    flex-direction:column;
+}
+.message-row {
+    width:100%;
+    margin-top:30px;
+    display:flex;
+    align-items: center;
+    
+    animation:message-row_ani 0.3s linear;
+}
+@keyframes message-row_ani {
+    from {
+        transform:translateX(-100px);
+        opacity:0;
+    }
+    to {
+        transform:none;
+        opacity:1;
+    }
+}
+
+.message-row img {
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    margin-right:10px;
+}
+.message_author {
+    display:block;
+    margin-bottom:5px;
+}
+.message_time {
+    margin-top:10px;
+}
+.message_author,
+.message_time {
+    opacity:0.8;
+    font-size:14px;
+}
+.message_bubble {
+    background-color:white;
+    font-size:17px;
+    padding:11px;
+    border-radius:15px;
+    border-top-left-radius:0;
+    margin-right:5px;
+}
+.message_info {
+    display:flex;
+    align-items: flex-end;/*풍선이랑 시간 밑에 맞추다*/
+}
+.message-row_won {
+    justify-content: flex-end;
+    opacity: 0;
+        
+    animation:message-row_won_ani 0.5s 0.5s linear forwards;
+}
+@keyframes message-row_won_ani {
+    from {
+        transform:translateX(100px);
+        opacity:1;
+    }
+    to {
+        transform:none;
+        opacity:1;
+    }
+}
+.message-row_won .message_info {
+    /* justify-content: flex-end;같이쓰면왜 안될까 위에 따로써줌.*/
+    flex-direction: row-reverse;
+}
+.message-row_won .message_bubble {
+    margin-left:5px;
+    border-radius:15px;
+    border-top-right-radius:0;
+    background-color:var(--yellow);
+}
+.reply {
+    position:fixed;
+    bottom:0;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color:white;
+    padding:5px 25px;
+    box-sizing: border-box;
+    transition:transform 0.3s ease-in-out;
+}
+.reply i {
+    opacity: 0.5;
+}
+.reply_column:first-child {
+    width:10%;
+    
+}
+.reply_column:last-child {
+    width:90%;
+    position:relative;
+}
+.reply input {
+    width:100%;
+    padding:10px;
+    border:var(--main-border);
+    border-radius:20px;
+    box-sizing: border-box;
+    transition:all .3s ease-in-out;
+}
+.reply_column:last-child > i,
+.reply_column:last-child button {
+    position:absolute;
+    top:3px;
+    right:2px;
+}
+.reply_column:last-child > i {
+    top:17px;
+    right:40px;
+}
+.reply_column:last-child button {
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    background-color:var(--yellow);
+    border:none;
+}
+.reply:focus-within .reply_column:first-child,
+.reply:focus-within .fa-face-smile,
+.reply:focus-within button {
+    opacity:0;
+    
+}
+.reply:focus-within .reply_column:first-child,
+.reply:focus-within .fa-face-smile,
+.reply:focus-within button {
+    transition:opacity .3s ease-in-out;
+}
+.reply:focus-within {
+    transform:translateY(80px);
+}   
+.reply input:focus {
+    width:98vw;
+    transform:translateX(-13%)
+    translateY(-80px);
+    outline:none;
+}
+
+
+
+
+
+
