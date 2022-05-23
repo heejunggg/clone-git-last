@@ -24,3 +24,33 @@
     color:rgba(0,0,0,0.5);
     font-size:18px;
 }
+#splash-screen {
+    width:100vw;
+    height:100vh;
+    
+    position:absolute;
+    top:0;
+    background-image:url(../../img/cloud.svg);
+    animation:splash 0.4s 1s ease-in-out forwards;
+}
+
+@keyframes splash {
+    from {
+        opacity:1;
+    }
+    to {
+        opacity:0;
+        visibility:hidden;
+    }
+}
+#splash-screen span {
+    font-size:30px;
+    font-weight:600;
+    white-space:nowrap;
+    color:#155a93;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    opacity:0.8;
+}
