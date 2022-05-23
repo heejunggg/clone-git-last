@@ -7,6 +7,10 @@
     display:flex;
     flex-direction: column;
     align-items: center;
+    transition:all 0.5s ease-in-out;
+}
+.icon-row_icon:hover {
+    transform:scale(1.2);
 }
 .icon-row_icon i {
     font-size:35px;

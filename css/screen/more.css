@@ -18,8 +18,8 @@
     margin-right:30px;
 }
 .more-suppestions_icon-image {
-    background-color:rgb(169, 42, 249);
-    box-shadow: 5px 5px 20px rgb(71, 70, 71);
+    background-color:#eee;
+    box-shadow: 3px 0px 10px #b7ffff;
     width:60px;
     height:60px;
     border-radius: 10px;
@@ -46,7 +46,7 @@
     height:100%;
     border-radius: 10px;
     font-size:20px;
-    color:rgb(8, 247, 215);
+    color:gray;
 }
 .more-suppestions_icon-text {
     opacity: 0.5;

@@ -4,6 +4,16 @@
     justify-content:space-between;
     align-items:center;
 }
+.user_component {
+    margin:20px 0;
+   padding:10px;
+    transition:all 0.3s ease-in-out;
+}
+.user_component:hover {
+    border-radius:15px;
+    padding:10px;
+    box-shadow: 1px 3px 5px 3px rgba(0,0,0,0.15);
+}
 .user_component_avatar {
     margin-right:10px;
     border-radius:30px;
@@ -24,6 +34,7 @@
 }
 .user_component_title--not-bold {
     font-weight:400;
+    font-size:18px;
 }
 .user_component_subtitle{
     color:rgba(0,0,0,0.8);

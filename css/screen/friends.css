@@ -5,7 +5,6 @@
     background-color:#fafafa;
     padding:15px 0;
     margin-bottom:13px;
-    opacity:0.7;
     font-size:18px;
 }
 #friends-display-link i {
@@ -17,7 +16,8 @@
 
 .friends-channel {
     border-top:1px solid rgba(0,0,0,0.2);
-    padding:20px 0;
+    padding:10px 0;
+    margin-top:25px;
     display:flex;
     justify-content:space-between;
     align-items: center;

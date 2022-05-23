@@ -3,10 +3,11 @@
     justify-content:center;
     padding:10px 14px;
     box-sizing:border-box;
-
     position:fixed;
     top:0;
     width:100%;
+    background-color:#deffff;
+    
 }
 .status-bar_cloumn {
     width:33%;

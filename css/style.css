@@ -24,9 +24,12 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    height:200vh;
+    height:110vh;
 }
 
+body::-webkit-scrollbar {
+    
+}
 .main-screen {
     padding:0 var(--horizontal-space);
 }
