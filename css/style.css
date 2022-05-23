@@ -28,7 +28,7 @@ body {
 }
 
 body::-webkit-scrollbar {
-    
+    display:none;
 }
 .main-screen {
     padding:0 var(--horizontal-space);
