@@ -1,9 +1,9 @@
 .screen-header {
-    /*position:sticky;
-    top:0;*/
+    position:fixed;
+    top:35px;
     width:100%;
     padding:var(--horizontal-space);
-    margin-top:50px;
+   
         
     display:flex;
     justify-content:space-between;

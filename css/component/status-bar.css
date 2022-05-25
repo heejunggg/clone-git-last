@@ -6,8 +6,9 @@
     position:fixed;
     top:0;
     width:100%;
-    background-color:#deffff;
-    
+    /*background-color:#deffff;*/
+    background-color:#e8f5d9;
+    box-shadow: inset 3px 8px 30px #a4d064;
 }
 .status-bar_cloumn {
     width:33%;

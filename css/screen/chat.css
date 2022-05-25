@@ -1,35 +1,86 @@
+
 #chat-screen {
-    background-color:#a2d7d7;
+    background-image:url(../../img/chat-bac.png);
 }
 .chat_timestamp {
     color:white;
-    background-color:#65bdbd;
-    padding:10px;
+    background-color:#77836a;
+    padding:10px 30px;
     border-radius:25px;
-    text-align:center;
+    font-size:13px;
+    animation:fadeIn 0.8s linear;
 }
-.main-chat {
+@keyframes fadeIn {
+    from {
+        transform:translateY(40px);
+        opacity:0
+    }
+    to {
+        transform:none;
+        opacity:1;
+    }
+}
+.main-screen.main-chat {
     margin-top:20px;
     display:flex;
     flex-direction:column;
+    align-items:center;
 }
 .message-row {
     width:100%;
     margin-top:30px;
     display:flex;
     align-items: center;
-    
-    animation:message-row_ani 0.3s linear;
 }
-@keyframes message-row_ani {
+
+/*  왼쪽 - animation img와 author  */
+.message-row img,
+.message-row .message_author {
+    opacity: 0;
+    animation:message-row_img 0.8s 1s ease-in-out forwards;
+}
+.message-row__second img,
+.message-row__second .message_author {
+    opacity: 0;
+    animation:message-row_img 0.8s 3.5s ease-in-out forwards;
+}
+.message-row__third img,
+.message-row__third .message_author {
+    opacity: 0;
+    animation:message-row_img 0.8s 6s ease-in-out forwards;
+}
+@keyframes message-row_img {
     from {
         transform:translateX(-100px);
-        opacity:0;
     }
     to {
         transform:none;
         opacity:1;
     }
+}
+/* 왼-row-info-글씨 */
+.message-row .message_info {
+    opacity:0;
+    animation:message_info-time 0.8s 1.8s ease-in-out forwards;
+}
+@keyframes message_info-time {
+    from {
+        transform:scale(0);
+        transform-origin: 0% 0%;
+    }
+    to {
+        transform:scale(1);
+        opacity:1;
+        transform-origin: 0% 0%;
+    }
+}
+.message-row__second .message_info { /*왼쪽두번째 info*/
+    opacity:0;
+    animation:message_info-time 0.8s 4.3s ease-in-out forwards;
+}
+.message-row__third .message_info {/*왼쪽세번째 info*/
+    opacity:0;
+    animation:message_info-time 0.8s 7s ease-in-out forwards;
 }
 
 .message-row img {
@@ -41,52 +92,70 @@
 .message_author {
     display:block;
     margin-bottom:5px;
+    font-size:17px;
 }
 .message_time {
     margin-top:10px;
+    font-size:10px;
 }
 .message_author,
 .message_time {
     opacity:0.8;
-    font-size:14px;
 }
 .message_bubble {
-    background-color:white;
-    font-size:17px;
+    background-color:#e1f4da;
+    font-size:15px;
     padding:11px;
     border-radius:15px;
     border-top-left-radius:0;
     margin-right:5px;
+    background-color:#e1f4da;
+    border:2px solid rgb(96, 143, 244);
+    box-shadow: 2px 4px 3px rgba(0,0,0,0.2);
 }
 .message_info {
     display:flex;
     align-items: flex-end;/*풍선이랑 시간 밑에 맞추다*/
 }
-.message-row_won {
-    justify-content: flex-end;
+/* 첫번째 오른쪽 won */
+.message-row_won .message_info {
     opacity: 0;
-        
-    animation:message-row_won_ani 0.5s 0.5s linear forwards;
+    animation:message-row_won_ani 0.8s 2.8s ease-in-out forwards;
 }
 @keyframes message-row_won_ani {
     from {
-        transform:translateX(100px);
-        opacity:1;
-    }
+        transform:scale(0);
+        transform-origin: 100% 0%;
+     }
     to {
-        transform:none;
+        transform:scale(1);
+        transform-origin: 100% 0%;
         opacity:1;
     }
+}
+.message-row_won.second .message_info {/*두번째오른쪽 info*/
+    opacity: 0;
+    animation:message-row_won_ani 0.8s 5s ease-in-out forwards;
+}
+.message-row_won.third .message_info {
+    opacity: 0;
+    animation:message-row_won_ani 0.8s 8s ease-in-out forwards;
+}
+
+.message-row_won {
+    display:flex;
+    justify-content: flex-end;
 }
 .message-row_won .message_info {
-    /* justify-content: flex-end;같이쓰면왜 안될까 위에 따로써줌.*/
     flex-direction: row-reverse;
 }
+
 .message-row_won .message_bubble {
     margin-left:5px;
     border-radius:15px;
     border-top-right-radius:0;
-    background-color:var(--yellow);
+    background-color:#e1f4da;
+    border:2px solid sandybrown;
 }
 .reply {
     position:fixed;
@@ -95,7 +164,7 @@
     display:flex;
     justify-content:space-between;
     align-items: center;
-    background-color:white;
+    background-color:#83826a;
     padding:5px 25px;
     box-sizing: border-box;
     transition:transform 0.3s ease-in-out;

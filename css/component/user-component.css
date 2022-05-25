@@ -40,7 +40,7 @@
     color:rgba(0,0,0,0.8);
     font-size:17px;
     display:flex;
-    justify-content:center;
+    justify-content:flex-start;
     align-items: center;
 }
 .user_component-column:last-child {
