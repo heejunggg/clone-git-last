@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="music_play/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>chats</title>
+    <title>music</title>
 </head>
 <body>
     <div class="status-bar">
@@ -24,7 +26,7 @@
     </div>  
 
     <header class="screen-header">
-        <h1 class="screen-header_title">Chats</h1>
+        <h1 class="screen-header_title">music</h1>
         <div class="screen-header_icons">
             <span><i class="fas fa-regular fa-magnifying-glass"></i></span>
             <span><i class="fas fa-regular fa-music"></i></span>
@@ -33,53 +35,49 @@
                     <i class="fas fa-regular fa-gear"></i>
                 </a>
             </span>
+        
+            <div class="screen-header_circle"></div>
         </div>
     </header>
+        <main class="main-screen a">
+            <div class="user-components">
+                <div class="user-components_column">
+                    <img src="img/cho.jpg" class="user-components_squre">
+                </div>
+                <div class="user-components_column">
+                    <h2 class="user-components_column-title">Seungwoo Cho</h2>
+                    <h5 class="user-components_column-name">This moment right now</h5>
+                </div>
+            </div>
+            <div class="tallboxs">
+                <div class="tallbox tallbox_tall first"></div>
+                <div class="tallbox tallbox_tall second"></div>
+                <div class="tallbox tallbox_tall third"></div>
+                <div class="tallbox tallbox_tall fourth"></div>
+                <div class="tallbox tallbox_tall fifth"></div>
+            </div>
 
-    <main class="main-screen">
-        <a href="chat.html">
-            <div class="user_component">
-                <div class="user_component-column">
-                    <img src="img/ann.jpg" class="user_component_avatar user-component_avatar--xl"/>
-                    <div class="user_component_text">
-                    <h4 class="user_component_title">Anne</h4>
-                    <h6 class="user_component_subtitle">Thank you for what you see</h6>
-                    </div>
+            <div class="volume-box">
+                <div class="volume-box_time">
+                    <span class="volume-box_time-left">12:53</span>
+                    <span class="volume-box_time-right">1:30</span>
                 </div>
-                <div class="user_component-column">
-                    <span class="user_component-number2">2</span>
+                <div class="volume-box_bar">
+                    <div class="volume-bar_inner"></div>
+                    <div class="volume-bar_inner-one"></div>
                 </div>
             </div>
-        <a href="chat-mymento.html">
-            <div class="user_component">
-                <div class="user_component-column">
-                    <img src="img/mikyung.jpg" class="user_component_avatar user-component_avatar--xl"/>
-                    <div class="user_component_text">
-                    <h4 class="user_component_title">My mentor Mi Kyung</h4>
-                    <h6 class="user_component_subtitle">passionately</h6>
-                    </div>
-                </div>
-                <div class="user_component-column">
-                    <span class="user_component-number2">2</span>
-                </div>
+            <div class="play-button">
+                <i class="fa-solid fa-repeat"></i>
+                <i class="fa-solid fa-backward-step fa-lg"></i>
+                <i class="fa-solid fa-play fa-2x"></i>
+                <i class="fa-solid fa-forward-step fa-lg"></i>
+                <i class="fa-solid fa-list">
+                   <a href="list-music.html">
+                </i></a>
             </div>
-        </a>
-        <a href="chat-bible.html">
-            <div class="user_component">
-                <div class="user_component-column">
-                    <img src="img/bible.png" class="user_component_avatar user-component_avatar--xl"/>
-                    <div class="user_component_text">
-                    <h4 class="user_component_title">educational guide</h4>
-                    <h6 class="user_component_subtitle">wait and believe</h6>
-                    </div>
-                </div>
-                <div class="user_component-column">
-                    <span class="user_component-number2">2</span>
-                </div>
-            </div>
-        </a>        
-    </main>
-    
+        </main>
+   
     <nav class="nav">
         <ul class="nav_list">
             <li class="nav_btn">
@@ -102,7 +100,7 @@
                 </a>
             </li>
             <li class="nav_btn">
-                <a class="nav_link" href="more.html">
+                <a class="nav_link" href="find.html">
                     <span>find</span>
                     <img src="img/dong.png"/>
                 </a>
@@ -116,9 +114,6 @@
         </ul>
     </nav>
 
-    <div id="no-mobile">
-        <span>Your screen is too big~</span>
-     </div>
 
     <script src="https://kit.fontawesome.com/3d2f6dddc1.js" crossorigin="anonymous"></script>
     </script>

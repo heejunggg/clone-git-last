@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+/* components */
+@import "components/status-bar.css";
+@import "components/user-component.css";
+
+/*screens*/
+@import "screens/center-bar.css";
+@import "screens/musiclist.css";
+@import "screens/right.css";
+
+
+* {margin:0; padding:0;}
+	ul,li{list-style:none; }
+	
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+.status-bar {
+    display:flex;
+    justify-content: space-between;
+    margin-bottom:30px;
+    box-sizing: border-box;
+}
+
+.main-screen {
+    padding:0 13px;
+}
+
+.containter { /*큰박스*/
+   /* border:1px solid black;*/
+    width:300px;
+    padding:30px 20px;
+    margin:20px 0px;
+    border-radius:20px;
+    box-shadow: -1px -1px 10px 8px rgba(197, 197, 197, 0.3);
+}

@@ -13,7 +13,6 @@
 @import "component/icon-row.css";
 @import "component/no-mobile.css";
 
-
 /* screen */
 @import "screen/login.css";
 @import "screen/friends.css";
@@ -21,6 +20,10 @@
 @import "screen/find.css";
 @import "screen/more.css";
 @import "screen/setting.css";
+@import "screen/right.css";
+@import "screen/music-bar.css";
+@import "screen/musiclist.css";
+@import "screen/center-bar.css";
 
 body  {
     font-family: 'Open Sans', sans-serif;

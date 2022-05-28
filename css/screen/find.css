@@ -1,3 +1,36 @@
+.search {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search_box {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    padding:10px 20px;
+    border:2px solid rgb(45, 155, 48);
+    background-color:white;
+    border-radius: 20px;
+}
+.search_box input {
+    width:100%;
+    border:none;
+    outline:none;
+    transition:border-bottom 0.4s ease-in-out;
+}
+.search_box i {
+    color:grey;
+}
+.search_box input::placeholder {
+    color:rgb(45, 155, 48);
+}
+.search_box input:focus {
+    border-bottom:1px solid rgb(101, 247, 22);
+}
+
+
+
 .recommended-friends {
     border-top:var(--main-border);
     border-bottom:var(--main-border);

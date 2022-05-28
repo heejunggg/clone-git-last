@@ -1,0 +1,38 @@
+
+.tallboxs {
+    display:flex;
+}   
+.tallbox {
+    width:7px;
+    height:20px;
+    margin-left:5px;
+    background-color: rgb(29, 245, 245);
+    display:flex;
+    justify-content: center;
+    margin-top:60px;
+    will-change: transform;
+    animation:tallboxani 1s ease-in-out infinite ;
+    position:relative;
+}
+@keyframes tallboxani {
+    0%{
+        transform:scaleY(1);
+    }
+    20%{
+        transform:scaleY(2);
+    }
+    40%{
+        transform:scaleY(3);
+    }
+    60%{
+        transform:scaleY(2);
+    }
+    80%{
+        transform:scaleY(1);
+    }
+}
+/*.tallbox.first { animation-delay:0.1s;}*/
+.tallbox.second { animation-delay:0.1s;}
+.tallbox.third { animation-delay:0.3s;}
+.tallbox.fourth { animation-delay:0.2s;}
+.tallbox.fifth { animation-delay:0.1s;}

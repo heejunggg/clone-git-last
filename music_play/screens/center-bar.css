@@ -1,0 +1,33 @@
+.center-bar {
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    margin:30px 30px 15px;
+}
+.center-bar_column {
+    width:90px;
+    height:30px;
+    padding:6px 15px;
+    font-size:16px;
+    border-radius:30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 8px 10px rgba(212, 214, 214,0.7 );
+}
+.center-bar_column:first-child {
+    background-color:black;
+    color:white;
+    margin-right:30px;
+}
+.center-bar_column:last-child {
+    background-color:white;
+    color:black;
+}
+.center-bar_column:last-child i {
+    color:red;
+}
+.center-bar_heart-number {
+    color:gray;
+    margin-left:2px;
+}
