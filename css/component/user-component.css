@@ -5,8 +5,8 @@
     align-items:center;
 }
 .user_component {
-    margin:20px 0;
-   padding:10px;
+    margin:15px 0;
+    padding:10px;
     transition:all 0.3s ease-in-out;
 }
 .user_component:hover {
@@ -20,15 +20,15 @@
     object-fit: cover;
 }
 .user-component_avatar--sm {
-    width:70px;
-    height:70px;
+    width:60px;
+    height:60px;
 }
 .user-component_avatar--xl {
     width:80px;
     height:80px;
 }
 .user_component_title {
-    font-size:22px;
+    font-size:20px;
     font-weight:600;
     margin-bottom:10px;
 }
@@ -38,7 +38,7 @@
 }
 .user_component_subtitle{
     color:rgba(0,0,0,0.8);
-    font-size:17px;
+    font-size:15px;
     display:flex;
     justify-content:flex-start;
     align-items: center;

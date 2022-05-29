@@ -10,7 +10,6 @@
     align-items:center;
     margin-bottom:15px;
 }
-
 .alt-header_column {
     width:33%;
 }
@@ -20,7 +19,6 @@
 }
 .alt-header_column:nth-child(2) {
     text-align:center;
-    
 }
 .alt-header_column:nth-child(2) h1 {
     font-size:25px;
@@ -33,5 +31,6 @@
     color:grey;
 }  
 .alt-header_column .fa-music {
-    margin-left:15px;
+    display:block;
+    margin:0 10px;
 }
